@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Me</title>
+    <style>
+      body {
+        background-color: #8ed081;
+      }
+
+      #sidebar {
+        float: left;
+        height: 100%;
+        width: 30%;
+      }
+      #main-section {
+        float: right;
+        height: 100%;
+        width: 70%;
+      }
+      #text-column {
+        float: left;
+        width: 50%;
+      }
+      #background-column {
+        float: right;
+        width: 50%;
+      }
+
+      p {
+        text-indent: 40px;
+        padding-bottom: 5px;
+      }
+      img {
+        float: right;
+        image-orientation: initial;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function changeTextColor(elem, textColor) {
+        elem.checked = true;
+        document.body.style.color = textColor;
+      }
+      function changeBackgroundColor(elem, backgroundColor) {
+        elem.checked = true;
+        document.body.style.backgroundColor = backgroundColor;
+      }
+    </script>
+    <div id="container">
+      <div id="sidebar">
+        <div id="text-column">
+          <h3>Text</h3>
+          <form>
+            <input
+              type="radio"
+              onchange="changeTextColor(this, 'blue');"
+              name="textColors"
+              value="blue"
+              checked
+            />
+            Blue <br />
+            <input
+              type="radio"
+              onchange="changeTextColor(this, 'blueviolet');"
+              name="textColors"
+              value="blueviolet"
+            />
+            Violet <br />
+            <input
+              type="radio"
+              onchange="changeTextColor(this, 'chartreuse');"
+              name="textColors"
+              value="chartreuse"
+            />
+            Lime Green <br />
+            <input
+              type="radio"
+              onchange="changeTextColor(this, 'cyan');"
+              name="textColors"
+              value="cyan"
+            />
+            Light Blue <br />
+            <input
+              type="radio"
+              id="textRB4"
+              onchange="changeTextColor(this, 'darkgreen');"
+              name="textColors"
+              value="darkgreen"
+            />
+            Dark Green <br />
+            <input
+              type="radio"
+              onchange="changeTextColor(this, 'darkorange');"
+              name="textColors"
+              value="darkorange"
+            />
+            Dark Orange <br />
+            <input
+              type="radio"
+              onchange="changeTextColor(this, 'deeppink');"
+              name="textColors"
+              value="deeppink"
+            />
+            Pink <br />
+            <input
+              type="radio"
+              onchange="changeTextColor(this, 'dimgray');"
+              name="textColors"
+              value="dimgray"
+            />
+            Gray <br />
+            <input
+              type="radio"
+              onchange="changeTextColor(this, 'gold');"
+              name="textColors"
+              value="gold"
+            />
+            Gold <br />
+            <input
+              type="radio"
+              onchange="changeTextColor(this, 'red');"
+              name="textColors"
+              value="red"
+            />
+            Red
+          </form>
+        </div>
+        <div id="background-column">
+          <h3>Background</h3>
+          <form>
+            <input
+              type="radio"
+              onchange="changeBackgroundColor(this, 'blue');"
+              name="backgroundColors"
+              value="blue"
+              checked
+            />
+            Blue <br />
+            <input
+              type="radio"
+              onchange="changeBackgroundColor(this, 'blueviolet');"
+              name="backgroundColors"
+              value="blueviolet"
+            />
+            Violet <br />
+            <input
+              type="radio"
+              onchange="changeBackgroundColor(this, 'chartreuse');"
+              name="backgroundColors"
+              value="chartreuse"
+            />
+            Lime Green <br />
+            <input
+              type="radio"
+              onchange="changeBackgroundColor(this, 'cyan');"
+              name="backgroundColors"
+              value="cyan"
+            />
+            Light Blue <br />
+            <input
+              type="radio"
+              onchange="changeBackgroundColor(this, 'darkgreen');"
+              name="backgroundColors"
+              value="darkgreen"
+            />
+            Dark Green <br />
+            <input
+              type="radio"
+              onchange="changeBackgroundColor(this, 'darkorange');"
+              name="backgroundColors"
+              value="darkorange"
+            />
+            Dark Orange <br />
+            <input
+              type="radio"
+              onchange="changeBackgroundColor(this, 'deeppink');"
+              name="backgroundColors"
+              value="deeppink"
+            />
+            Pink <br />
+            <input
+              type="radio"
+              onchange="changeBackgroundColor(this, 'dimgray');"
+              name="backgroundColors"
+              value="dimgray"
+            />
+            Gray <br />
+            <input
+              type="radio"
+              onchange="changeBackgroundColor(this, 'gold');"
+              name="backgroundColors"
+              value="gold"
+            />
+            Gold <br />
+            <input
+              type="radio"
+              onchange="changeBackgroundColor(this,'red');"
+              name="backgroundColors"
+              value="red"
+            />
+            Red
+          </form>
+        </div>
+      </div>
+      <div id="main-section">
+        <div id="section-1">
+          <h2>A Little About Me</h2>
+          <div id="words-and-images">
+            <img src="./Images/Image.JPG" id="pic" height="450" width="350" />
+            <p>
+              I'm Nicholas Lionel Caceres, but most people just call me Nick.
+              I'm nearly 23 years old (only a month to go!) and come from a huge
+              Hispanic family. My dad's half of the family is Peruvian while my
+              mom's family is mexican. Though my dad only has one sister giving
+              me one aunt from my dad's side, my mom, on the other hand,
+              actually has eight siblings. Thanks to those eight aunts and
+              uncles, I fortunately grew up with tons of cousins that are like
+              my brothers and sisters despite being the only kid in my entire
+              family to not have a sibling. My family is and always has been
+              such a huge part of my life, and I'm incredibly thankful to have
+              them.
+            </p>
+            <p>
+              In my own personal life, I'm glad I have a wonderful girlfriend of
+              three years who sticks by my side as well as three amazing
+              lifelong friends that I've known since I was only five years old.
+              My girlfriend is Kat, and we've been fortunate enough to have seen
+              quite a bit of the country together. Just this past summer we
+              saved up all the money we could make, and drove from Irvine, CA
+              straight down the 10 freeway to Disney World near Orlando,
+              Florida. We had plenty of bumps along the road in my old '03
+              Corolla, but we somehow made the trip in a little over two days!
+              As for those three best buds of mine, they're Antonio, Edwin and
+              Jean, and we've had plenty of our own adventures over the course
+              of 18 years. Whether with my girlfriend or my best pals, I can't
+              help but look forward to many more adventures to come.
+            </p>
+          </div>
+        </div>
+        <div id="section-2">
+          <h2>As for my School Life</h2>
+          <p>
+            At school, I'm a super-senior, having finished most of my major
+            requirements already. Luckily USC allowed me to finish the financial
+            aid they gave me, so I can take extra classes, finish my minors and
+            take every opportunity to learn here at USC. Here at USC I've taken
+            up a B.S. in Biological Sciences and two fun minors, namely East
+            Asian Languages and Cultures, emphasizing Chinese, and ITP,
+            emphasizing Mobile App Development. Though I'm relatively new to the
+            Web Development world, I thought this class would be a great way to
+            toss myself into the Web Dev world and get a better understanding of
+            programming as a whole. From here, I hope to gain better coding
+            practices, better skills, a deeper appreciation for the APIs I need
+            in Mobile Development, and just to have a lot of fun making web
+            content.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
